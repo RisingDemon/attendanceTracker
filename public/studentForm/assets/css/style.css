@@ -1,0 +1,80 @@
+.astrk:before{
+    content:"*" ;
+    color:red   
+    }
+form{
+    background-color: ghostwhite;
+    /* text-align: center; */
+}
+label{
+    margin: 5px;
+    font-family: 'Abyssinica SIL', serif;
+}
+input{
+    margin: 10px;
+    border-radius: 7px;
+    height: 27px;
+}
+select{
+    margin: 10px;
+    height: 27px;
+}
+
+.headNav{
+    display: flex;
+    background-color: lightcyan;
+}
+.logo{
+    float: left;
+    margin: 10px;
+}
+
+.flCombo, .addressCombo, .clgCombo, .cmtArea{
+    margin-left: 30%;
+}
+.titles{
+    margin-left: 4%;
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 17px;
+    font-weight: 600
+}
+#submitBtn{
+    display: block;
+    border-radius: 3px;
+    margin-left: 72%;
+}
+.nav{
+    font-size: 21px;
+    margin-left: 21%;
+    margin-top: 17px;;
+}
+@media only screen and (max-width: 680px) {
+    .flCombo, .addressCombo, .clgCombo, .cmtArea, .titles, #submitBtn, .nav{
+        margin-left: 0%;
+    }
+    .clgSelect{
+        max-width: 100%;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        clear: both;
+        display: flex;
+        justify-content: center;
+    }
+    .headNav{
+        display: block;
+    }
+    .lname{
+        display: inline-block;
+        
+    }
+}
+@media only screen and (max-width: 820px) {
+    #lastName{
+        display: block;
+    }
+}

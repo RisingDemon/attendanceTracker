@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="headNav">
+      <div class="logo">
+        <img src="assets/img/clgLogo.jpeg" alt="logo" width="100" height="100" />
+      </div>
+      <div class="nav">
+        <h2 id="clgForm">COLLEGE FORM</h2>
+      </div>
+    </div>
+    <form class="studLoginForm" action="">
+      <div id="center1">
+        <div class="titles">Personal Details</div>
+        <div class="flCombo">
+          <label class="fname astrk" for="fname">First Name: </label>
+          <input class="fname" id="fnameIp" type="text" required />
+          <div id="lastName">
+            <label class="lname astrk" for="lname">Last Name: </label>
+            <input class="lname" id="lnameIp" type="text" required /><br />
+          </div>
+          <label for="phone" class="astrk">Phone no: </label>
+          <input id="phoneIp" type="text" pattern="[0-9]{10}" required /><br />
+          <label for="bdate" class="astrk">Date of Birth: </label>
+          <input id="DOBIp" type="date" /><br />
+        </div>
+      </div>
+      <hr />
+      <div id="center2">
+        <div class="titles">Address</div>
+        <div class="addressCombo">
+          <label for="add1" class="astrk">Street address: </label>
+          <input id="add1Ip" type="text" required /><br />
+          <label for="add2">Street address2: </label>
+          <input id="add2Ip" type="text" /><br />
+          <label for="city" class="astrk"> City: </label>
+          <input id="cityIp" type="text" required /><br />
+          <label for="state" class="astrk">State: </label>
+          <input id="stateIp" type="text" required /><br />
+          <label for="country" class="astrk">Country: </label>
+          <input id="countryIp" type="text" required /><br />
+          <label for="pin" class="astrk">Pin code: </label>
+          <input id="pinIp" type="text" pattern="[0-9]{6}" /><br />
+        </div>
+      </div>
+      <hr />
+      <div id="center3">
+        <div class="titles">College Details</div>
+        <div class="clgCombo">
+          <label class="left astrk" for="prn">PRN no: </label>
+          <input id="prnIp"  class="left" type="text" pattern="[0-9]{10}" required /><br />
+          <label for="clg">College</label>
+          <select id="clgIp" name="clg" class="clgSelect">
+            <option value="">--Select College--</option>
+            <option value="dypcet">
+              D.Y.Patil college of Engineering and technology kasba bawada
+              kolhapur
+            </option>
+            <option value="kit">Kolhapur Institute of technology</option>
+            <option value="bharti">bhartiya vidya peeth</option>
+            <option value="dot">Department of technoloy</option></select
+          ><br />
+          <label for="mail" class="astrk">Email address: </label>
+          <input id="emailIp" type="email" required /><br />
+        </div>
+      </div>
+      <hr />
+      <div class="cmtArea">
+        <textarea name="" id="" cols="30" rows="10">Comments: </textarea>
+      </div>
+      <button id="submitBtn" type="submit">Submit</button>
+    </form>
+    <script type="module" src="assets/js/index.js"></script>
+  </body>
+</html>
