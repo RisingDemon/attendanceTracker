@@ -19,6 +19,14 @@ const studInfoRoutes = (request, response) => {
   console.log("in routes");
   console.log(studInfo);
 
+  connection.connect((err) => {
+    if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
+    }
+    console.log("MySQL connected...");
+  });
+
   const checkQuery = `select * from studentinfo where prn="${prn}"`;
   connection.query(checkQuery, function (err, result) {
     if (err) {
