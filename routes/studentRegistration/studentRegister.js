@@ -25,10 +25,10 @@ const studInfoRoutes = (request, response) => {
       console.log(err);
       response
         .status(500)
-        .json({ code: 500, message: "Internal server error" });
+        .json({ code: 600, message: "Internal server error" });
     } else {
       if (result.length == 0) {
-        const insertQuery = `insert into studentinfo(firstName,lastName,phone,DOB,address1,address2,city,state,pin,prn,counrty,college,email) values("${name}","${lname}","${phone}","${dob}","${add}","${add2}","${city}","${state}","${pin}","${prn}","${country}","${clg}","${email}")`;
+        const insertQuery = `insert into studentinfo(firstName,lastName,phone,DOB,address1,city,state,pin,prn,counrty,college,email) values("${name}","${lname}","${phone}","${dob}","${add}","${city}","${state}","${pin}","${prn}","${country}","${clg}","${email}")`;
         connection.query(insertQuery, function (err) {
           if (err) {
             console.log(err);
