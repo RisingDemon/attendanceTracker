@@ -24,7 +24,7 @@ const studInfoRoutes = (request, response) => {
     if (err) {
       console.log(err);
       response
-        .status(500)
+        .status(600)
         .json({ code: 600, message: "Internal server error" });
     } else {
       if (result.length == 0) {
