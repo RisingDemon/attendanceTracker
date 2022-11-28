@@ -25,9 +25,9 @@ const studInfoRoutes = (request, response) => {
       return;
     }
     console.log("MySQL connected...");
-    connection.end();
   });
-
+  // connection.end();
+  
   const checkQuery = `select * from studentinfo where prn="${prn}"`;
   connection.query(checkQuery, function (err, result) {
     if (err) {
