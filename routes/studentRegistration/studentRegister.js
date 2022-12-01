@@ -7,13 +7,16 @@ const studInfoRoutes = (request, response) => {
     phone,
     dob,
     add,
-    add2,
+    // add2,
     city,
     state,
     pin,
     prn,
-    country,
-    clg,
+    classs,
+    div,
+    roll,
+    // country,
+    // clg,
     email,
   } = studInfo;
   console.log("in routes");
@@ -37,7 +40,7 @@ const studInfoRoutes = (request, response) => {
         .json({ code: 600, message: "Internal server error" });
     } else {
       if (result.length == 0) {
-        const insertQuery = `insert into studentinfo(firstName,lastName,phone,DOB,address1,city,state,pin,prn,country,college,email) values("${name}","${lname}","${phone}","${dob}","${add}","${city}","${state}","${pin}","${prn}","${country}","${clg}","${email}")`;
+        const insertQuery = `insert into studentinfo values("${name}","${lname}","${phone}","${dob}","${add}","${city}","${state}","${pin}","${prn}","${classs}","${div}","${roll}","${email}")`;
         connection.query(insertQuery, function (err) {
           if (err) {
             console.log(err);

@@ -36,7 +36,7 @@
           <label for="phone" class="astrk">Phone no: </label>
           <input id="phoneIp" type="text" pattern="[0-9]{10}" required /><br />
           <label for="bdate" class="astrk">Date of Birth: </label>
-          <input id="DOBIp" type="date" /><br />
+          <input id="DOBIp" type="date" required /><br />
         </div>
       </div>
       <hr />
@@ -45,16 +45,16 @@
         <div class="addressCombo">
           <label for="add1" class="astrk">Street address: </label>
           <input id="add1Ip" type="text" required /><br />
-          <label for="add2">Street address2: </label>
-          <input id="add2Ip" type="text" /><br />
-          <label for="city" class="astrk"> City: </label>
+          <!-- <label for="add2">Street address2: </label>
+          <input id="add2Ip" type="text" /><br /> -->
+          <label for="city" class="astrk">City: </label>
           <input id="cityIp" type="text" required /><br />
           <label for="state" class="astrk">State: </label>
           <input id="stateIp" type="text" required /><br />
-          <label for="country" class="astrk">Country: </label>
-          <input id="countryIp" type="text" required /><br />
+          <!-- <label for="country" class="astrk">Country: </label>
+          <input id="countryIp" type="text" required /><br /> -->
           <label for="pin" class="astrk">Pin code: </label>
-          <input id="pinIp" type="text" pattern="[0-9]{6}" /><br />
+          <input id="pinIp" type="text" pattern="[0-9]{6}" required /><br />
         </div>
       </div>
       <hr />
@@ -63,7 +63,7 @@
         <div class="clgCombo">
           <label class="left astrk" for="prn">PRN no: </label>
           <input id="prnIp"  class="left" type="text" pattern="[0-9]{10}" required /><br />
-          <label for="clg">College</label>
+          <!-- <label for="clg">College</label>
           <select id="clgIp" name="clg" class="clgSelect">
             <option value="">--Select College--</option>
             <option value="dypcet">
@@ -73,15 +73,40 @@
             <option value="kit">Kolhapur Institute of technology</option>
             <option value="bharti">bhartiya vidya peeth</option>
             <option value="dot">Department of technoloy</option></select
+          ><br /> -->
+
+
+          <label for="clg">Class</label>
+          <select id="classIp" name="clg" class="clgSelect" required>
+            <option value="">--Select Class--</option>
+            <option value="FY">
+              First Year
+            </option>
+            <option value="SY">Second Year</option>
+            <option value="TY">Third Year</option>
+            <option value="BE">Fourth Year</option></select
           ><br />
+          <label for="clg">Division</label>
+          <select id="divIp" name="clg" class="clgSelect" required>
+            <option value="">--Select Division--</option>
+            <option value="A">
+              A
+            </option>
+            <option value="B">B</option>
+            <option value="C">C</option></select
+          ><br />
+
+          <label for="roll" class="astrk">Roll no: </label>
+          <input id="rollIp" type="text" required /><br />
+
           <label for="mail" class="astrk">Email address: </label>
           <input id="emailIp" type="email" required /><br />
         </div>
       </div>
       <hr />
-      <div class="cmtArea">
+      <!-- <div class="cmtArea">
         <textarea name="" id="" cols="30" rows="10">Comments: </textarea>
-      </div>
+      </div> -->
       <button id="submitBtn" type="submit">Submit</button>
     </form>
     <script type="module" src="assets/js/index.js"></script>

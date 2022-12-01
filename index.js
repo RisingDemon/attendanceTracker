@@ -11,4 +11,4 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-app.post("/api/studInfo", studInfoRoutes);
+app.post("/api/studInfo2", studInfoRoutes);
