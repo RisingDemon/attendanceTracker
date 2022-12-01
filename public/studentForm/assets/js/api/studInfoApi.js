@@ -7,7 +7,7 @@ async function studInfoSend(studInfo) {
     body: JSON.stringify(studInfo),
   };
   try {
-    const response = await fetch("/api/studInfo2", arg);
+    const response = await fetch("/api/studInfo", arg);
     const result = await response.json();
     console.log(result);
     if (result.code == 200) {
