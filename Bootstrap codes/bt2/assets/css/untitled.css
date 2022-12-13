@@ -1,0 +1,49 @@
+.mb-1 {
+  margin-bottom: .25rem !important;
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .masthead h1, .masthead .h1 {
+    /*font-size: 4.5rem;*/
+    margin-left: 0px;
+  }
+}
+
+.btn-xl.js-scroll-trigger {
+  /*margin: 10px;*/
+  padding: 19px;
+}
+
+#title {
+  /*float: right;*/
+  /*display: inline-block;*/
+  width: 40%;
+  height: 45%;
+  margin-left: 43%;
+  margin-top: 10%;
+  /*font-size: font-size: calc(1.375rem + 1.5vw);*/
+  font-size: calc(3.75rem + 1.6vw);
+}
+
+.lineClass {
+  display: block;
+  margin: 18px;
+}
+
+.selectClass {
+  border-radius: 6px;
+}
+
+.btnCol {
+  /*color: var(--bs-orange);*/
+  background-color: var(--bs-orange);
+  width: 100%;
+}
+
+.commondiv {
+  margin: auto;
+  width: 30%;
+  margin-top: 25px;
+}
+

@@ -48,6 +48,36 @@ const studInfoRoutes = (request, response) => {
               .status(500)
               .json({ code: 500, message: "Internal server error" });
           } else {
+            console.log("user registered");
+            console.log("findinng table");
+            // const findTableQuery = `select * from information_schema.tables where table_name like '${div}%'`;
+            const findTableQuery = `show tables like '${div}%'`;
+            connection.query(findTableQuery, function (err, result) {
+              if(err){
+                console.log("failed to find table");
+                console.log(err);
+              }
+              else{
+                console.log("found table");
+                console.log(result);
+                // for each table found add the new student
+                result.forEach((table) => {
+                  console.log(table);
+                  const tableName = Object.values(table)[0];
+                  console.log(tableName);
+                  const addRowQuery = `insert into ${tableName} values("${name}","${lname}","${phone}","${prn}","${classs}","${div}","${roll}")`;
+                  connection.query(addRowQuery, function (err) {
+                    if (err) {
+                      console.log(err);
+                      console.log("error adding row");
+                    } else {
+                      console.log("added rows");
+                    }
+                  });
+                });
+              }
+
+            });
             response
               .status(200)
               .json({ code: 200, message: "User registered successfully" });

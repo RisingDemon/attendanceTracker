@@ -1,0 +1,61 @@
+.mb-1 {
+  margin-bottom: .25rem !important;
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .masthead h1, .masthead .h1 {
+    /*font-size: 4.5rem;*/
+    margin-left: 0px;
+  }
+}
+
+.btn-xl.js-scroll-trigger {
+  /*margin: 10px;*/
+  padding: 19px;
+}
+
+#title {
+  /*float: right;*/
+  /*display: inline-block;*/
+  width: 40%;
+  height: 45%;
+  margin-left: 43%;
+  margin-top: 10%;
+  /*font-size: font-size: calc(1.375rem + 1.5vw);*/
+  font-size: calc(3.75rem + 1.6vw);
+}
+
+.lineClass {
+  /* display: block;
+  margin: 18px; */
+}
+
+.selectClass {
+  display: block;
+  margin: 18px;
+  border-radius: 4px;
+}
+
+.btnCol {
+  /*color: var(--bs-orange);*/
+  background-color: orange;
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  /* color: white; */
+  padding:2px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black;
+}
+
+#optSel{
+  margin: 15px;
+  width: max-content;
+
+}

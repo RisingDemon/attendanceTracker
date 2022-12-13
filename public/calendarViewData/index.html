@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="selClass">
+            <div class="abc">
+                <label class="labelSel">Select Division: </label>
+                <select class="xyz" id="selDivision">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+            <div class="abc">
+                <label class="labelSel">Select Subject: </label>
+                <select class="xyz" id="selSubject">
+                    <option value="ACA">ACA</option>
+                    <option value="CC">CC</option>
+                    <option value="ADS">ADS</option>
+                    <option value="WT">WT</option>
+                </select>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="month">
+                <i id="angleLeft" class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1>March</h1>
+                    <p>Mon May 23 2022</p>
+                </div>
+                <i id="angleRight" class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </div>
+    <div id="statusStudent"></div>
+    <script type="module" src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

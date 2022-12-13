@@ -1,0 +1,59 @@
+.btnCol {
+    /*color: var(--bs-orange);*/
+    background-color: orange;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    /* color: white; */
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.commondiv {
+    margin: auto;
+    width: 20%;
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 1300px) {
+      .commondiv{
+          width: 40%;
+        }
+    }
+    @media screen and (max-width: 657px) {
+      .commondiv{
+          width: 65%;
+      }
+    }
+
+  #button1 {
+    margin-top: 30px;
+    /*background-color: black;*/
+    border-color: black;
+  }
+  
+  #button1:hover {
+    background-color: #17667f;
+    color: white;
+    border-color: white;
+  }
+
+  #button2 {
+    margin-top: 30px;
+    /*background-color: black;*/
+    border-color: black;
+  }
+  
+  #button2:hover {
+    background-color: #17667f;
+    color: white;
+    border-color: white;
+  }
+
+  img{
+    vertical-align: middle;
+  }
