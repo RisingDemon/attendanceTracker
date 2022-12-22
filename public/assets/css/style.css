@@ -1,0 +1,10 @@
+#titleDiv{
+    margin: auto;
+    width: 11%;
+}
+@media screen and (max-width: 600px) {
+    #titleDiv{
+        width: 76%;
+    }
+}
+    

@@ -45,7 +45,7 @@ const submitAttendance = (request, response) => {
       }
       response.status(200).json({ code: 200, message: "success" });
 
-      connection.end();
+      // connection.end();
     }
   });
 };

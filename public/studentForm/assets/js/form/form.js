@@ -1,4 +1,5 @@
 import {studInfoSend} from "../api/studInfoApi.js";
+import {teachInfoApi} from "../api/teachInfoApi.js";
 export function getDetails() {
   console.log("getDetails function called");
   const getName = document.getElementById("fnameIp").value;
@@ -47,4 +48,18 @@ export function getDetails() {
 
     studInfoSend(studInfo);
 
+}
+
+export function getDetailsTeacher(){
+  console.log("getDetailsTeacher function called");
+  const teachEmail = document.getElementById("teachEmail").value;
+  const teachPassword = document.getElementById("teachPassword").value;
+  const teachConfirmPassword = document.getElementById("teachConfirmPassword").value;
+  let teachInfo={
+    email:teachEmail,
+    password:teachPassword,
+    confirmPassword:teachConfirmPassword,
+  };
+  // console.log(teachInfo);
+  teachInfoApi(teachInfo);
 }

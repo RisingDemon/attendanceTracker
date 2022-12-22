@@ -59,3 +59,14 @@
   width: max-content;
 
 }
+#divCh{
+  width:10%;
+  margin:auto;
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  #divCh{
+    width:41%;
+  }
+}
+
