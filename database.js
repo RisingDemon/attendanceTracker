@@ -14,14 +14,14 @@ const connection = mysql.createConnection({
 });
 
 
-connection.connect((err) => {
-    if (err) {
-        console.error("error connecting: " + err.stack);
-        return;
-    }
+// connection.connect((err) => {
+//     if (err) {
+//         console.error("error connecting: " + err.stack);
+//         return;
+//     }
     
-    console.log("MySQL connected...");
-});
-connection.timeout = 10000;
+//     console.log("MySQL connected...");
+// });
+// connection.timeout = 10000;
 
 export {connection};
